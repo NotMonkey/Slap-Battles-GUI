@@ -157,27 +157,9 @@ drops:Button("Add option", function()
 drop:Add("Option")
 end)
 
-local clrs = serv:Channel("Colorpickers")
-
-clrs:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
-print(t)
-end)
-
-local textbs = serv:Channel("Textboxes")
-
-textbs:Textbox("Gun power", "Type here!", true, function(t)
-print(t)
-end)
-
 local lbls = serv:Channel("Labels")
 
 lbls:Label("This is just a label.")
-
-local bnds = serv:Channel("Binds")
-
-bnds:Bind("Kill bind", Enum.KeyCode.RightShift, function()
-print("Killed everyone!")
-end)
 
 serv:Channel("by dawid#7205")
 
